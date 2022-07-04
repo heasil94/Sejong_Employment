@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세종고용복지플러스</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./common.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./common.js"></script>
+</head>
+
+<body>
+    <header class="hd">
+        <h1 class="logo"><img src="./img/logo.png" alt="로고"></h1>
+        <div class="top_btn">
+            <a href="#"><img src="./img/search.svg" alt="검색버튼"></a>
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="search">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <button><img src="./img/search.svg" alt="검색버튼"></button>
+                <button class="close"><img src="./img/close.svg" alt="검색버튼"></button>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">정보마당</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">서식자료실</a>
+                        </li>
+                        <li>
+                            <a href="#">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="#">인재정보</a>
+                        </li>
+                        <li>
+                            <a href="#">관련사이트</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">알림마당</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">행사일정</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">센터알리미</a>
+                        </li>
+                        <li>
+                            <a href="#">홍보/보도자료실</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">열린마당</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">자주하는질문</a>
+                        </li>
+                        <li>
+                            <a href="#">질문하기</a>
+                        </li>
+                        <li>
+                            <a href="#">칭찬하기</a>
+                        </li>
+                        <li>
+                            <a href="#">불친절 신고하기</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고용복지센터소개</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">센터소장 인사말</a>
+                        </li>
+                        <li>
+                            <a href="#">센터에서 하는 일</a>
+                        </li>
+                        <li>
+                            <a href="#">부서 및 직원소개</a>
+                        </li>
+                        <li>
+                            <a href="#">시설안내</a>
+                        </li>
+                        <li>
+                            <a href="#">찾아오시는 길</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="img_con">
+                <div><img src="./img/ham_bg.png" alt="메뉴이미지"></div>
+                <p>모두가 웃는 행복한 나라 <br>고용복지+센터가 함께합니다.</p>
+            </div>
+        </nav>
+    </header>
+    <section class="sec1">
+        <ul class="slide">
+            <li>
+                <img src="./img/banner_1.png" alt="메인배너이미지1">
+                <div class="slide_txt">
+                    <h2>취업지원</h2>
+                    <p>내가 하고 싶은 일,<br>내가 할 수 있는 일<br>고용센터가 취업의<br>문을 열어 드립니다.</p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <img src="./img/banner_2.png" alt="메인배너이미지2">
+                <div class="slide_txt">
+                    <h2>고용안정사업</h2>
+                    <p>마음편하게 일할 수 있는 곳,<br>고용안정을 위해<br>고용센터가 앞장 서겠습니다.</p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <img src="./img/banner_3.png" alt="메인배너이미지3">
+                <div class="slide_txt">
+                    <h2>집단직업상담</h2>
+                    <p>내안에 또 다른 나,<br>직업상담은 여러분의 밝은<br>미래를 만들어 드립니다.</p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <img src="./img/banner_4.png" alt="메인배너이미지4">
+                <div class="slide_txt">
+                    <h2>직업능력개발</h2>
+                    <p>밝은 내일을 위한 오늘의 투자,<br>직업능력개발을 통해<br>더 좋은 내일을 만드세요.</p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <img src="./img/banner_5.png" alt="메인배너이미지5">
+                <div class="slide_txt">
+                    <h2>실업급여</h2>
+                    <p>어려움도 나누어<br>가질 수 있는 고용센터가<br>모든 근로자와 함께 합니다.</p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </li>
+            <li>
+                <img src="./img/banner_6.png" alt="메인배너이미지6">
+                <div class="slide_txt">
+                    <h2>모성보호</h2>
+                    <p>대한민국의 미래를 위한<br>작은 배려, 모성보호는<br>미래를 위한 투자입니다.</p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </li>
+        </ul>
+        <div class="dot_con">
+            <span class="on"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <button class="prev"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+        <button class="next"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+    </section>
+    <section class="sec2">
+        <h3>맞춤메뉴</h3>
+        <ul class="i_slide">
+            <li>
+                <img src="./img/icon_1.png" alt="슬라이드아이콘1">
+                <p>고용센터</p>
+            </li>
+            <li>
+                <img src="./img/icon_2.png" alt="슬라이드아이콘2">
+                <p>여성새일센터</p>
+            </li>
+            <li>
+                <img src="./img/icon_3.png" alt="슬라이드아이콘3">
+                <p>한국장애인<br>고용공단</p>
+            </li>
+            <li>
+                <img src="./img/icon_4.png" alt="슬라이드아이콘4">
+                <p>복지지원팀</p>
+            </li>
+            <li>
+                <img src="./img/icon_5.png" alt="슬라이드아이콘5">
+                <p>중장년일자리<br>희망센터</p>
+            </li>
+            <li>
+                <img src="./img/icon_6.png" alt="슬라이드아이콘6">
+                <p>자활센터</p>
+            </li>
+            <li>
+                <img src="./img/icon_7.png" alt="슬라이드아이콘7">
+                <p>일자리센터</p>
+            </li>
+        </ul>
+        <div class="i_btn">
+            <button class="i_prev"><i class="fa-solid fa-angle-left fa-2x"></i></button>
+            <button class="i_next"><i class="fa-solid fa-angle-right fa-2x"></i></button>
+        </div>
+    </section>
+    <section class="sec3">
+        <h3>지역 채용/인재 정보</h3>
+        <div class="tab_btn">
+            <a class="on">채용</a>
+            <a>인재</a>
+        </div>
+        <div class="sec3_box">
+            <div class="chk on">
+                <input type="radio" name="career" checked>신입
+                <input type="radio" name="career">경력
+                <input type="radio" name="career">무관
+            </div>
+            <div class="chk">
+                <input type="radio" name="career" checked>신입
+                <input type="radio" name="career">경력
+            </div>
+            <div class="s_txt">
+                <input type="text" placeholder="지역을 검색하세요.">
+                <a href="#">지역찾기</a>
+            </div>
+            <div class="s_txt">
+                <input type="text" placeholder="원하시는 직종을 검색하세요.">
+                <a href="#">직종찾기</a>
+            </div>
+            <div class="s_txt">
+                <input type="text" placeholder="키워드를 입력하세요.">
+                <a href="#">검색</a>
+            </div>
+        </div>
+    </section>
+    <section class="sec4">
+        <h3>공지사항</h3>
+        <ul class="sec4_nb">
+            <li class="on">전체</li>
+            <li>공지</li>
+            <li>안내</li>
+            <li>자주하는질문</li>
+        </ul>
+        <div class="noti on">
+            <div>
+                <strong>공지</strong>
+                <p>팩스서비스 <br>일시중지 안내(조치 완료)</p>
+                <span>2022-06-07</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>공지</strong>
+                <p>조기재취업<br>수당부지급 통지 공시송달 공고(광주지방고용노동청 익산지청 공고 제2022-15호)</p>
+                <span>2022-05-04</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>안내</strong>
+                <p>고령자 고용지원<br>금 시행(22년 신설)</p>
+                <span>2022-02-08</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>안내</strong>
+                <p>2021년 특별고용<br>촉진장려금 선지급 사업장 서류제출 안내</p>
+                <span>2022-01-19</span>
+                <a href="#">자세히 보기</a>
+            </div>
+        </div>
+        <div class="noti">
+            <div>
+                <strong>공지</strong>
+                <p>팩스서비스 일시<br>중지 안내(조치 완료)</p>
+                <span>2022-06-07</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>공지</strong>
+                <p>조기재취업수당 <br>부지급 통지 공시송달 공고(광주지방고용노동청 익산지청 공고 제2022-15호)</p>
+                <span>2022-05-04</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>공지</strong>
+                <p>2022년도 민간<br>위탁 고용서비스기관 기본역량심사 계획 공고</p>
+                <span>2022-05-02</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>공지</strong>
+                <p>세종고용센터 <br>실업급여 집체교육 운영시간 안내(시행일 22.5.2 부터)</p>
+                <span>2022-04-27</span>
+                <a href="#">자세히 보기</a>
+            </div>
+        </div>
+        <div class="noti">
+            <div>
+                <strong>안내</strong>
+                <p>고령자 고용지원<br>금 시행(22년 신설)</p>
+                <span>2022-02-08</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>안내</strong>
+                <p>2021년 특별고<br>용촉진장려금 선지급 사업장 서류제출 안내</p>
+                <span>2022-01-19</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>안내</strong>
+                <p>팩스서비스 일시<br>중지 안내(조치 완료)</p>
+                <span>2022-01-06</span>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div>
+                <strong>안내</strong>
+                <p>조기재취업수당 <br>부지급 통지 공시송달 공고(광주지방고용노동청 익산지청 공고 제2022-15호)</p>
+                <span>2022-01-01</span>
+                <a href="#">자세히 보기</a>
+            </div>
+        </div>
+        <div class="ans">
+            <a href="#">
+                <span>[1]</span>
+                <p>실업급여수급 신청자격은 어떻게 되나요?</p>
+            </a>
+            <a href="#">
+                <span>[2]</span>
+                <p>실업급여는 언제까지 신청해야 하나요?</p>
+            </a>
+            <a href="#">
+                <span>[3]</span>
+                <p>실업급여 지급액은 어떻게 되나요?</p>
+            </a>
+            <a href="#">
+                <span>[4]</span>
+                <p>실업급여 지급 요건은?</p>
+            </a>
+            <a href="#">
+                <span>[5]</span>
+                <p>본인이 스스로 사표를 쓰면 실업급여를 받을 수 없나요?</p>
+            </a>
+            <a href="#">
+                <span>[6]</span>
+                <p>실업급여를 받다가 취업하면 어떻게 하나요?</p>
+            </a>
+            <img src="./img/bgimg_q.png" alt="질문이미지">
+        </div>
+        <button class="s4_btn">더보기+</button>
+    </section>
+    <section class="sec5">
+        <h3>미니 홍보관</h3>
+        <div class="b_box">
+            <ul>
+                <li class="mini_1">
+                    <img src="./img/mini_ban1.png" alt="홍보관배너이미지1">
+                    <p><strong>복지 위기가구를 찾아서 알려주세요!</strong><br>읍·면·동 행정복지센터에서 도움이 필요한 분들을 직접 찾아갑니다</p>
+                </li>
+                <li class="mini_2"><img src="./img/mini_ban2.png" alt="홍보관배너이미지2"></li>
+                <li class="mini_3">
+                    <p>맞벌이·한부모 가정 등<strong><br>가사서비스 지원 시작</strong></p>
+                    <img src="./img/mini_ban3.png" alt="홍보관배너이미지3">
+                </li>
+            </ul>
+        </div>
+        <div class="s5_box">
+            <button class="s5_btn">조직안내</button>
+            <button class="pop_btn">찾아오시는 길</button>
+        </div>
+    </section>
+    <div class="pop_box">
+        <div class="pop_up">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.7589845662542!2d127.30294487142693!3d36.601443483653256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35652d6853ff900b%3A0x3c8516737238d860!2z7IS47KKF6rOg7Jqp67O17KeAK-yEvO2EsA!5e0!3m2!1sko!2skr!4v1654844121621!5m2!1sko!2skr"
+                width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <strong>찾아오시는 길 안내</strong>
+            <p>
+                &lt;고속버스로 오시는 경우&gt;
+                <br>대전방면 : 대전 → 조치원시외버스터미널 (50분 소요)
+                <br>*시외버스터미널 바로 뒤편에 위치
+                <br>&lt;시내버스로 오시는 경우&gt;
+                <br>조치원역 방면 경유 버스 이용 -> 조치원역 하차
+                -> 조치원시외버스터미널방면 (도보 15분 소요)
+                <br>*시외버스터미널 바로 뒤편에 위치
+            </p>
+            <strong>주소</strong>
+            <p>세종특별시 조치원읍 터미널안길 60 (상리 96)
+                세종고용복지+센터 2~3층</p>
+            <strong>연락처</strong>
+            <p>대표전화: 044-865-3219 <br>팩스: 0508-8230-0646
+            <br>이직확인서 팩스: 0508-8230-0642</p>
+        </div>
+    </div>
+    <footer>
+        <div class="f_top">
+            <h1><img src="./img/logo.png" alt="푸터로고"></h1>
+            <button>패밀리사이트 ▼</button>
+        </div>
+        <ul>
+            <a href="">개인정보처리방침</a>
+            <a href="">저작권정책</a>
+            <a href="">이메일무단수집거부</a>
+            <a href="">이용안내</a>
+            <a href="">웹 접근성 정책</a>
+        </ul>
+        <P>관할지역 세종특별자치시</P>
+        <P>주소 (우)30026 세종특별자치시 조치원읍 터미널안길 60</P>
+        <P>TEL 044-865-3219 / FAX 0508-8230-0646</P>
+        <P class="copy">Copyright 2018 KOREA EMPLOYMENT INFORMATION SERVICE. All riht reserved.</P>
+    </footer>
+</body>
+
+</html>
